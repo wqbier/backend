@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Реєстрація користувача</title>
+</head>
+<body>
+<h2>Форма реєстрації користувача</h2>
+
+<form action="register.php" method="post">
+    Псевдонім: <input type="text" name="nickname" maxlength="20"><br><br>
+    
+    Пароль: <input type="password" name="password" maxlength="20"><br><br>
+    Підтвердження пароля: <input type="password" name="confirm_password" maxlength="20"><br><br>
+    
+    Ім’я: <input type="text" name="firstname" maxlength="30"><br><br>
+    Прізвище: <input type="text" name="lastname" maxlength="30"><br><br>
+    
+    Адреса email: <input type="email" name="email" maxlength="50"><br><br>
+    
+    Країна: 
+    <select name="country">
+        <option value="">Оберіть країну</option>
+        <option value="Ukraine">Україна</option>
+        <option value="Poland">Польща</option>
+        <option value="USA">США</option>
+        <option value="Germany">Німеччина</option>
+    </select><br><br>
+    
+    Область: <input type="text" name="region" maxlength="50"><br><br>
+    Місто/село: <input type="text" name="city" maxlength="50"><br><br>
+    Вулиця: <input type="text" name="street" maxlength="50"><br><br>
+    
+    <input type="submit" value="Зареєструватися">
+</form>
+
+</body>
+</html>
