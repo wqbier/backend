@@ -1,0 +1,27 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+   	<title>Завантаження електронного підручника</title>
+</head>
+<body>
+<h2>Форма завантаження електронного підручника</h2>
+
+<form enctype="multipart/form-data" action="savebook.php" method="post">
+    	Автор книги: <input type="text" name="author" maxlength="50" size="40"><br><br>
+    	Назва книги: <input type="text" name="title" maxlength="100" size="40"><br><br>
+    	Видавництво: <input type="text" name="publisher" maxlength="50" size="40"><br><br>
+    	Кількість сторінок: <input type="number" name="pages" min="1" size="10"><br><br>
+    	Формат файлу: 
+    	<select name="format">
+        <option value="pdf">PDF</option>
+        <option value="epub">EPUB</option>
+        <option value="docx">DOCX</option>
+        <option value="txt">TXT</option>
+    	</select><br><br>
+
+    	Виберіть файл: <input type="file" name="bookfile"><br><br>
+
+    	<input type="submit" value="Завантажити">
+</form>
+</body>
+</html>
